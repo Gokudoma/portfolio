@@ -12,14 +12,14 @@
 }
 
 h2 {
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: #333;
+  font-size: 68px;
+  font-weight: 900;
+  margin-bottom: 35px;
+  color: #000000;
 }
 
 .portfolio-intro {
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
   max-width: 600px;
   margin: -20px auto 50px auto;
@@ -43,7 +43,7 @@ h2 {
 
 .project-image {
   flex-basis: 50%;
-  
+
   img {
     width: 100%;
     height: auto;
@@ -58,18 +58,18 @@ h2 {
 }
 
 h3 {
-  margin-top: 0;
-  font-family: 'Inter Tight', sans-serif;
   font-size: 32px;
   font-weight: 700;
-  color: #5988FF;
+  color: #9747FF;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .project-tech-stack {
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-  margin: 10px 0 25px 0;
+  font-size: 23px;
+  font-weight: 400;
+  color: #70E61C;
+  margin-bottom: 30px;
 }
 
 .project-links {
@@ -77,16 +77,33 @@ h3 {
   gap: 20px;
 }
 
-.btn-link {
-  padding: 12px 25px;
-  background-color: #5988FF;
-  color: white;
+.btn-primary, .btn-secondary {
+  padding: 15px 30px;
+  border-radius: 10px;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
 
-  &:hover {
-    background-color: #476dcc;
-  }
+.btn-primary {
+  background-color: #9747FF;
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #7d33e6;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #70E61C;
+  border: 1px solid #70E61C;
+}
+
+.btn-secondary:hover {
+  background-color: #70E61C;
+  color: white;
 }
