@@ -49,8 +49,9 @@
 }
 
 .subtitle {
-  font-size: 32px;
-  font-weight: 700;
+  color: #9747FF;
+  font-size: 58px;
+  font-weight: 400;
   margin: 10px 0 0 0;
   color: #989898;
 }
@@ -95,4 +96,23 @@
   background-color: rgba(147, 89, 255, 0.3);
   bottom: 10%;
   left: 20%;
+}
+
+.btn-hero-contact {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #70E61C;
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
+  }
 }
