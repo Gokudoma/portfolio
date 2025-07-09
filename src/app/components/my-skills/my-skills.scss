@@ -1,42 +1,133 @@
 .skills-section {
-  padding: 100px 40px;
-  display: flex;
-  justify-content: center;
+  padding: 100px;
+  border-bottom: 4px solid #70E61C;
+  position: relative;
+  overflow: hidden;
 }
 
 .skills-container {
-  max-width: 1200px;
-  width: 100%;
-  text-align: center;
+  max-width: 1340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
 }
 
-h2 {
-  font-size: 68px;
-  font-weight: 900;
-  margin-bottom: 80px;
-  color: #FFFFFF;
-}
-
-.skills-grid {
+.skills-icon-grid {
+  flex-basis: 55%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 60px 40px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 50px 20px;
 }
 
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  text-align: center;
 
   img {
-    height: 60px;
+    height: 70px;
     width: auto;
+    transition: transform 0.3s ease;
   }
 
   span {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    span {
+      color: #70E61C;
+    }
+  }
+}
+
+.skills-text-content {
+  flex-basis: 45%;
+  text-align: left;
+}
+
+.skills-headline {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
+.skills-headline h2 {
+    font-size: 68px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.headline-line {
+  height: 4px;
+  width: 68px;
+  background-color: #9747FF;
+}
+
+.skills-text-content .bold-text {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.skills-text-content .bold-text span {
+  color: #FFFFFF;
+}
+
+.skills-text-content .bold-text .highlight {
+  color: #9747FF;
+}
+
+.skills-text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.btn-get-in-touch {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #70E61C;
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn-get-in-touch:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+  .skills-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .skills-headline {
+    justify-content: center;
+  }
+  .skills-text-content {
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 80px 40px;
+  }
+  .skills-icon-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
