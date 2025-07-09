@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -91,6 +92,56 @@
   height: auto;
 }
 
+.fixed-socials {
+  position: fixed;
+  bottom: 40px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  z-index: 100;
+}
+
+.social-line {
+  width: 100px;
+  height: 4px;
+  background-color: #9747FF;
+}
+
+.fixed-socials img {
+  height: 24px;
+  width: auto;
+}
+
+.fixed-socials .email-text {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.scroll-down-indicator {
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 100;
+}
+
+.scroll-down-indicator span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.scroll-down-indicator img {
+  height: 24px;
+  transform: rotate(-90deg);
+}
+
 .hero-background-shape {
   position: absolute;
   right: 0;
@@ -129,6 +180,9 @@
   }
   .title {
     font-size: 44px;
+  }
+  .fixed-socials, .scroll-down-indicator {
+    display: none;
   }
 }
 
