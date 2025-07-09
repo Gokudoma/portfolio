@@ -25,17 +25,40 @@
 }
 
 .headline {
+  position: relative;
+  padding-left: 100px;
+}
+
+.greeting {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 64px;
-  font-weight: 700;
+  color: #FFFFFF;
   line-height: 1.2;
-  margin: 0;
+}
+
+.main-headline {
+  display: block;
 }
 
 .name {
-  color: #70E61C;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FFFFFF;
+  display: block;
 }
 
 .title {
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #9747FF;
   display: block;
 }
 
@@ -61,10 +84,11 @@
 .image-content {
   position: relative;
   z-index: 2;
-  img {
-    max-width: 450px;
-    height: auto;
-  }
+}
+
+.image-content img {
+  max-width: 450px;
+  height: auto;
 }
 
 .hero-background-shape {
@@ -87,10 +111,38 @@
     order: -1;
     margin-bottom: 30px;
   }
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 20px;
+  }
+  .greeting {
+    position: static;
+    transform: none;
+    writing-mode: horizontal-tb;
+    font-size: 48px;
+  }
+  .name {
+    font-size: 68px;
+  }
+  .title {
+    font-size: 44px;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-content {
     padding: 0 40px;
+  }
+  .name {
+    font-size: 48px;
+  }
+  .title {
+    font-size: 34px;
+  }
+  .greeting {
+    font-size: 38px;
   }
 }
