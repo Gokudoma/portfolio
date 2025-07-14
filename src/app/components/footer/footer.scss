@@ -13,11 +13,13 @@
   justify-content: space-between;
   align-items: center;
   color: white;
-  box-sizing: border-box;
 }
 
 .footer-brand-section {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
 }
 
 .footer-name {
@@ -27,8 +29,6 @@
 }
 
 .legal-notice {
-  display: block;
-  margin-top: 5px;
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -58,5 +58,8 @@
     flex-direction: column;
     gap: 40px;
     text-align: center;
+  }
+  .footer-brand-section {
+    align-items: center;
   }
 }

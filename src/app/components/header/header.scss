@@ -56,16 +56,16 @@ nav a:hover {
   font-weight: 500;
   gap: 5px;
   font-size: 20px;
+}
 
-  span {
-    padding: 8px 15px;
-    cursor: pointer;
-  }
+.language-switch span {
+  padding: 8px 15px;
+  cursor: pointer;
+}
 
-  .active {
-    border: 1px solid #70E61C;
-    border-radius: 20px;
-  }
+.language-switch .active {
+  border: 1px solid #70E61C;
+  border-radius: 20px;
 }
 
 .hamburger-menu {
@@ -78,45 +78,62 @@ nav a:hover {
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(20, 29, 47, 0.65);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  background-color: rgba(20, 29, 47, 0.8);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  transition: opacity 0.3s ease, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
   z-index: 101;
-  transition: left 0.4s ease-in-out;
-  padding: 30px 25px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu-overlay.open {
-  left: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile-menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 80px;
+  padding: 30px 100px;
+  box-sizing: border-box;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 29px;
+    text-align: center;
 }
 
 .mobile-nav-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .mobile-nav-links a {
   display: block;
-  padding: 15px 0;
   font-size: 28px;
   color: white;
   text-decoration: none;
 }
 
 .mobile-nav-links .language-switch {
-  margin-top: 40px;
+  margin-top: 20px;
   color: white;
   font-size: 28px;
 }
@@ -125,14 +142,13 @@ nav a:hover {
   .desktop-nav-wrapper {
     display: none;
   }
-
   .hamburger-menu {
     display: block;
   }
 }
 
 @media (max-width: 768px) {
-  .header-container {
+  .header-container, .mobile-menu-header {
     padding: 20px 40px;
   }
 }
