@@ -9,22 +9,6 @@
   box-sizing: border-box;
 }
 
-.bg-shadow {
-  position: absolute;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.shadow-1 {
-  top: 50px;
-  right: -200px;
-}
-
-.shadow-2 {
-  bottom: -150px;
-  left: -150px;
-}
-
 .hero-content {
   display: flex;
   align-items: center;
@@ -42,21 +26,17 @@
 }
 
 .headline {
-  position: relative;
-  padding-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .greeting {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: center;
-  font-family: 'Poppins', sans-serif;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
   font-weight: 400;
   font-size: 64px;
-  color: #FFFFFF;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .main-headline {
@@ -118,16 +98,13 @@
     margin-bottom: 30px;
   }
   .headline {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 0;
     gap: 20px;
   }
   .greeting {
-    position: static;
-    transform: none;
     writing-mode: horizontal-tb;
+    transform: none;
     font-size: 48px;
   }
   .name {
