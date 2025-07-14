@@ -1,17 +1,14 @@
 <section id="hero" class="hero-section">
-  <img src="assets/img/backgrounds/shadow-hero-1.png" alt="" class="bg-shadow shadow-1">
-  <img src="assets/img/backgrounds/shadow-hero-2.png" alt="" class="bg-shadow shadow-2">
-
   <div class="hero-content">
     <div class="text-content">
       <h1 class="headline">
-        <span class="greeting">I am</span>
+        <span class="greeting">{{ 'hero.greeting' | translate }}</span>
         <div class="main-headline">
-          <span class="name">Stephan Wacker.</span>
-          <span class="title">FRONTEND DEVELOPER</span>
+          <span class="name">{{ 'hero.name' | translate }}</span>
+          <span class="title">{{ 'hero.title' | translate }}</span>
         </div>
       </h1>
-      <a href="#contact" class="btn-hero-contact">Let's talk!</a>
+      <a href="#contact" class="btn-hero-contact">{{ 'hero.button' | translate }}</a>
     </div>
     <div class="image-content">
       <img src="assets/img/profile-image.png" alt="Ein Bild von Stephan Wacker">

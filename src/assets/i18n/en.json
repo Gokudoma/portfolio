@@ -1,0 +1,43 @@
+{
+  "header": {
+    "about": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "greeting": "I am",
+    "name": "Stephan Wacker.",
+    "title": "FRONTEND DEVELOPER",
+    "button": "Let's talk!"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+    "info1": "Where are you located? Are you open to different ways of working, such as working remotely or even relocating?",
+    "info2": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+    "info3": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like analytical thinking, creativity, persistence and collaboration."
+  },
+  "skills": {
+    "title": "My skills",
+    "p1": "I have experience in implementing projects with various front-end technologies and agile methodologies.",
+    "p2_1": "Looking for ",
+    "p2_2": "another skill",
+    "p2_3": "?",
+    "p3": "I am enthusiastic about learning new technologies and frameworks to stay on the cutting edge.",
+    "button": "Get in touch"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "intro": "Here is a selection of my projects. Feel free to check them out and test the applications.",
+    "button_live": "Live test",
+    "button_github": "Github"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Have a question or want to work together? Send me a message!",
+    "button": "Send message"
+  },
+  "footer": {
+    "legal_notice": "Legal Notice"
+  }
+}

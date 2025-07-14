@@ -5,14 +5,14 @@
     <div class="desktop-nav-wrapper">
       <nav>
         <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about-me">{{ 'header.about' | translate }}</a></li>
+          <li><a href="#skills">{{ 'header.skills' | translate }}</a></li>
+          <li><a href="#portfolio">{{ 'header.portfolio' | translate }}</a></li>
         </ul>
       </nav>
       <div class="language-switch">
-        <span>DE</span>
-        <span class="active">EN</span>
+        <span (click)="switchLanguage('de')" [class.active]="translate.currentLang === 'de'">DE</span>
+        <span (click)="switchLanguage('en')" [class.active]="translate.currentLang === 'en'">EN</span>
       </div>
     </div>
 
@@ -38,15 +38,15 @@
     </div>
     <nav class="mobile-nav-links">
       <ul>
-        <li><a href="#about-me" (click)="toggleMenu()">About me</a></li>
-        <li><a href="#skills" (click)="toggleMenu()">My skills</a></li>
-        <li><a href="#portfolio" (click)="toggleMenu()">Portfolio</a></li>
-        <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+        <li><a href="#about-me" (click)="toggleMenu()">{{ 'header.about' | translate }}</a></li>
+        <li><a href="#skills" (click)="toggleMenu()">{{ 'header.skills' | translate }}</a></li>
+        <li><a href="#portfolio" (click)="toggleMenu()">{{ 'header.portfolio' | translate }}</a></li>
+        <li><a href="#contact" (click)="toggleMenu()">{{ 'contact.title' | translate }}</a></li>
       </ul>
       <div class="language-switch">
-        <span class="active">EN</span>
+        <span (click)="switchLanguage('en'); toggleMenu()" [class.active]="translate.currentLang === 'en'">EN</span>
         <span>/</span>
-        <span>DE</span>
+        <span (click)="switchLanguage('de'); toggleMenu()" [class.active]="translate.currentLang === 'de'">DE</span>
       </div>
     </nav>
   </div>

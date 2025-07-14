@@ -1,0 +1,18 @@
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>{{ 'contact.title' | translate }}</h2>
+    <p class="contact-intro">{{ 'contact.intro' | translate }}</p>
+    <form action="https://formspree.io/f/DEINE_EINZIGARTIGE_FORM_ID" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">{{ 'contact.button' | translate }}</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+{
+  "header": {
+    "about": "Über mich",
+    "skills": "Skills",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "greeting": "Ich bin",
+    "name": "Stephan Wacker.",
+    "title": "FRONTEND ENTWICKLER",
+    "button": "Kontakt!"
+  },
+  "about": {
+    "title": "Über mich",
+    "p1": "Schreibe hier etwas über dich mit IT-Bezug. Warum brennst du für das Programmieren? Was inspiriert dich, deine Fähigkeiten zu verbessern?",
+    "info1": "Wo befindest du dich? Bist du offen für verschiedene Arbeitsmodelle wie Remote-Arbeit oder sogar einen Umzug?",
+    "info2": "Zeige, dass du aufgeschlossen bist. Bist du begeistert davon, neue Technologien zu lernen und dich ständig zu verbessern?",
+    "info3": "Eine kurze Beschreibung deines Problemlösungsansatzes. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst? Du kannst Schlüsselwörter wie analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit einbeziehen."
+  },
+  "skills": {
+    "title": "Meine Skills",
+    "p1": "Ich habe Erfahrung in der Umsetzung von Projekten mit diversen Frontend-Technologien und agilen Methoden.",
+    "p2_1": "Auf der Suche nach ",
+    "p2_2": "einer weiteren Fähigkeit",
+    "p2_3": "?",
+    "p3": "Ich bin begeistert davon, neue Technologien und Frameworks zu lernen, um am Puls der Zeit zu bleiben.",
+    "button": "Kontakt aufnehmen"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "intro": "Hier ist eine Auswahl meiner Projekte. Schauen Sie sich diese gerne an und testen Sie die Anwendungen.",
+    "button_live": "Live-Test",
+    "button_github": "Github"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Haben Sie eine Frage oder möchten Sie zusammenarbeiten? Schreiben Sie mir eine Nachricht!",
+    "button": "Nachricht senden"
+  },
+  "footer": {
+    "legal_notice": "Impressum"
+  }
+}
