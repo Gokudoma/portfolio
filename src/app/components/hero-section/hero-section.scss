@@ -23,6 +23,9 @@
 
 .text-content {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .headline {
@@ -64,7 +67,7 @@
   margin-top: 30px;
   padding: 15px 30px;
   background-color: #70E61C;
-  color: #000000;
+  color: white;
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
@@ -76,6 +79,7 @@
 .btn-hero-contact:hover {
   transform: scale(1.05);
   box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
+  background-color: #9747FF;
 }
 
 .image-content {
@@ -90,11 +94,13 @@
 
 @media (max-width: 992px) {
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
+  .text-content {
+    align-items: center;
+  }
   .image-content {
-    order: -1;
     margin-bottom: 30px;
   }
   .headline {

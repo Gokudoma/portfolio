@@ -97,7 +97,7 @@
   margin-top: 30px;
   padding: 15px 30px;
   background-color: #70E61C;
-  color: #000000;
+  color: white;
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
@@ -107,6 +107,7 @@
 
 .btn-get-in-touch:hover {
   transform: scale(1.05);
+  background-color: #9747FF;
 }
 
 @media (max-width: 1200px) {
