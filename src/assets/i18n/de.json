@@ -12,10 +12,10 @@
   },
   "about": {
     "title": "Über mich",
-    "p1": "Schreibe hier etwas über dich mit IT-Bezug. Warum brennst du für das Programmieren? Was inspiriert dich, deine Fähigkeiten zu verbessern?",
-    "info1": "Wo befindest du dich? Bist du offen für verschiedene Arbeitsmodelle wie Remote-Arbeit oder sogar einen Umzug?",
-    "info2": "Zeige, dass du aufgeschlossen bist. Bist du begeistert davon, neue Technologien zu lernen und dich ständig zu verbessern?",
-    "info3": "Eine kurze Beschreibung deines Problemlösungsansatzes. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst? Du kannst Schlüsselwörter wie analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit einbeziehen."
+    "p1": "Von der ersten Zeile Code an war ich fasziniert von der Möglichkeit, logische Strukturen zu bauen und interaktive Erlebnisse zu schaffen. Meine Leidenschaft liegt darin, Rätsel zu lösen und kreative Ideen zum Leben zu erwecken. Dies treibt meinen ständigen Lernwunsch an, und ich freue mich darauf, direkt nach dem Frontend-Bootcamp mit dem Backend-Kurs zu beginnen, um mich zum Full-Stack-Entwickler weiterzubilden.",
+    "info1": "Ansässig in Olpe, bin ich bestens für die Remote-Arbeit ausgestattet und offen für verschiedene Arbeitsmodelle, um meine Fähigkeiten in spannende Projekte einzubringen.",
+    "info2": "Ich bin mit großer Begeisterung dabei, in neue Technologien einzutauchen. Mein Weg durch die Developer Akademie hat meine Überzeugung vom lebenslangen Lernen gefestigt, und ich bin immer bestrebt, die nächste Herausforderung anzunehmen und meinen Tech-Stack zu erweitern.",
+    "info3": "Ich gehe Herausforderungen mit einer strukturierten und analytischen Denkweise an. Jedes Problem ist für mich eine Gelegenheit, die effizienteste und eleganteste Lösung zu finden, wobei ich kreatives Denken mit beharrlicher, methodischer Arbeit verbinde, um saubere und effektive Ergebnisse zu erzielen."
   },
   "skills": {
     "title": "Meine Skills",
