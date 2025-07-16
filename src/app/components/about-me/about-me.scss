@@ -22,6 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .image-frame {
@@ -76,9 +77,24 @@
   line-height: 1.4;
 }
 
+.about-me-image::after {
+  content: '';
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 4px;
+  background-color: #70E61C;
+}
+
 @media (max-width: 992px) {
   .about-me-container {
     flex-direction: column;
     padding: 0 40px;
+  }
+
+  .about-me-image {
+    display: none;
   }
 }
