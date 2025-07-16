@@ -77,6 +77,7 @@
 .btn-hero-contact:hover {
   transform: scale(1.05);
   box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
+  background-color: #9747FF;
 }
 
 .image-content {
@@ -84,8 +85,11 @@
 }
 
 .image-content img {
-  width: 690px;
+  position: relative;
+  width: 646px;
   height: auto;
+  top: -30px;
+  left: 47px;
 }
 
 @media (max-width: 1200px) {
@@ -96,6 +100,8 @@
   .image-content img {
     width: 100%;
     max-width: 450px;
+    top: 0;
+    left: 0;
   }
   .name {
     font-size: 72px;
@@ -118,6 +124,10 @@
   }
   .image-content {
     margin-bottom: 30px;
+  }
+  .image-content img {
+    top: 0;
+    left: 0;
   }
   .headline {
     flex-direction: column;
