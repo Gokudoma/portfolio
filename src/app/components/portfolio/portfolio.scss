@@ -1,22 +1,30 @@
 .portfolio-section {
-  padding: 100px 40px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 68px;
+  font-weight: 900;
+  margin-bottom: 35px;
+  color: #FFFFFF;
 }
 
 .portfolio-intro {
   font-size: 20px;
   color: #E0E0E0;
-  max-width: 700px;
-  margin: 0 auto 100px auto;
+  max-width: 600px;
+  margin: -20px auto 100px auto;
   text-align: center;
 }
 
@@ -38,6 +46,8 @@ h2 {
 
 .project-image {
   flex-basis: 50%;
+  height: 339px;
+  width: 620px;
 }
 
 .project-image img {
@@ -86,8 +96,8 @@ h3 {
 }
 
 .btn-primary:hover {
-  transform: scale(1.05);
   background-color: #70E61C;
+  color: white;
 }
 
 .btn-secondary {
@@ -102,15 +112,16 @@ h3 {
 }
 
 @media (max-width: 992px) {
+  .portfolio-container {
+    padding: 0 40px;
+  }
   .project-item, .project-item:nth-child(even) {
     flex-direction: column;
     text-align: center;
   }
-
   .project-description {
     text-align: center;
   }
-
   .project-links {
     justify-content: center;
   }

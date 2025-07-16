@@ -1,15 +1,20 @@
 .about-me-section {
-  padding: 100px;
+  padding: 100px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .about-me-container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
 }
 
 .about-me-image {
@@ -74,5 +79,6 @@
 @media (max-width: 992px) {
   .about-me-container {
     flex-direction: column;
+    padding: 0 40px;
   }
 }
