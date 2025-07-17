@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0px;
   width: 100%;
 }
 
@@ -43,7 +44,7 @@
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   font-weight: 400;
-  font-size: 64px;
+  font-size: 36px;
   line-height: 1;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .name {
-  font-size: 90px;
+  font-size: 62px;
   font-weight: 700;
   line-height: 1.2;
   color: #FFFFFF;
@@ -60,7 +61,7 @@
 }
 
 .title {
-  font-size: 58px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 1.2;
   color: #9747FF;
@@ -93,7 +94,8 @@
 
 .image-content img {
   position: relative;
-  width: 646px;
+  width: 100%;
+  max-width: 646px;
   height: auto;
   top: -40px;
   left: -40px;
@@ -159,7 +161,6 @@
     right: 50px;
   }
   .image-content img {
-    width: 100%;
     max-width: 450px;
   }
   .name {
@@ -177,6 +178,7 @@
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 40px;
   }
   .text-content {
     align-items: center;
@@ -213,12 +215,6 @@
   .hero-wrapper {
     padding: 0 40px;
   }
-  .fixed-socials {
-    left: 40px;
-  }
-  .scroll-down-indicator {
-    right: 40px;
-  }
   .name {
     font-size: 48px;
   }
@@ -227,5 +223,24 @@
   }
   .greeting {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-wrapper {
+    padding: 0 25px;
+  }
+  .name {
+    font-size: 38px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .greeting {
+    font-size: 32px;
+  }
+  .btn-hero-contact {
+    padding: 12px 25px;
+    font-size: 18px;
   }
 }
