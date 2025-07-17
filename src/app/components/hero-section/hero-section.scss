@@ -24,8 +24,7 @@
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0px;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -71,6 +70,7 @@
 .btn-hero-contact {
   display: inline-block;
   margin-top: 30px;
+  margin-left: 35%;
   padding: 15px 30px;
   background-color: #70E61C;
   color: white;
@@ -90,15 +90,40 @@
 
 .image-content {
   flex-shrink: 0;
+  position: relative;
+  width: 646px;
+  height: 705px;
 }
 
-.image-content img {
-  position: relative;
+.image-content .profile-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 646px;
   height: auto;
-  top: -40px;
-  left: -40px;
+  z-index: 2;
+}
+
+.bg-shadow {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.purple-shadow-hero {
+  top: 85px;
+  left: 0;
+  width: 407px;
+  height: 608px;
+  transform: rotate(190.81deg);
+}
+
+.green-shadow-hero {
+  top: 80px;
+  left: 250px;
+  width: 521.78px;
+  height: 578.29px;
+  transform: rotate(40.81deg);
 }
 
 .fixed-socials {
@@ -160,17 +185,18 @@
   .scroll-down-indicator {
     right: 50px;
   }
-  .image-content img {
+  .image-content {
     max-width: 450px;
+    height: auto;
   }
   .name {
-    font-size: 72px;
+    font-size: 62px;
   }
   .title {
-    font-size: 48px;
+    font-size: 38px;
   }
   .greeting {
-    font-size: 52px;
+    font-size: 26px;
   }
 }
 
@@ -185,10 +211,14 @@
   }
   .image-content {
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 450px;
   }
-  .image-content img {
-    top: 0;
-    left: 0;
+  .image-content .profile-image {
+    position: static;
+  }
+  .bg-shadow {
+    display: none;
   }
   .headline {
     flex-direction: column;
