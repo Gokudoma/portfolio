@@ -1,13 +1,12 @@
 .hero-section {
   min-height: 100vh;
   padding-top: 109px;
-  box-sizing: border-box;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -16,7 +15,9 @@
   justify-content: space-between;
   gap: 80px;
   width: 100%;
-  flex-grow: 1;
+  max-width: 1440px;
+  padding: 0 100px;
+  box-sizing: border-box;
 }
 
 .text-content {
@@ -34,7 +35,7 @@
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   font-weight: 400;
-  font-size: 45px;
+  font-size: 64px;
   line-height: 1;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .name {
-  font-size: 59px;
+  font-size: 90px;
   font-weight: 700;
   line-height: 1.2;
   color: #FFFFFF;
@@ -51,7 +52,7 @@
 }
 
 .title {
-  font-size: 47px;
+  font-size: 58px;
   font-weight: 400;
   line-height: 1.2;
   color: #9747FF;
@@ -90,18 +91,22 @@
   left: -40px;
 }
 
-.hero-bottom-bar {
-  width: 100%;
+.left-bar, .right-bar {
+  position: absolute;
+  bottom: 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-bottom: 40px;
+  z-index: 100;
 }
 
-.fixed-socials {
-  display: flex;
-  align-items: center;
+.left-bar {
+  left: 100px;
   gap: 32px;
+}
+
+.right-bar {
+  right: 100px;
+  gap: 15px;
 }
 
 .social-line {
@@ -110,12 +115,12 @@
   background-color: #9747FF;
 }
 
-.fixed-socials img {
+.left-bar img {
   height: 24px;
   width: auto;
 }
 
-.fixed-socials .email-text {
+.email-text {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -140,9 +145,14 @@
 }
 
 @media (max-width: 1200px) {
-  .hero-section {
-    padding-left: 50px;
-    padding-right: 50px;
+  .hero-content {
+    padding: 0 50px;
+  }
+  .left-bar {
+    left: 50px;
+  }
+  .right-bar {
+    right: 50px;
   }
   .image-content img {
     width: 100%;
@@ -163,8 +173,6 @@
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
-    flex-grow: 0;
-    margin-top: 50px;
   }
   .text-content {
     align-items: center;
@@ -192,15 +200,20 @@
   .title {
     font-size: 44px;
   }
-  .hero-bottom-bar {
+  .left-bar, .right-bar {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    padding-left: 40px;
-    padding-right: 40px;
+  .hero-content {
+    padding: 0 40px;
+  }
+  .left-bar {
+    left: 40px;
+  }
+  .right-bar {
+    right: 40px;
   }
   .name {
     font-size: 48px;
