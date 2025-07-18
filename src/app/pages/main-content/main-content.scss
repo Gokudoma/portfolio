@@ -1,0 +1,16 @@
+:host(.main-content-host) {
+  position: relative;
+  display: block;
+}
+
+.skills-portfolio-shadow {
+  position: absolute;
+  bottom: 36%;
+  left: 21.8%;
+  width: 29.7vw;
+  height: 62.6vw;
+  max-width: 428.59px;
+  max-height: 901.44px;
+  z-index: 4;
+  pointer-events: none;
+}

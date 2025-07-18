@@ -15,7 +15,11 @@ import { Contact } from '../../components/contact/contact';
     Portfolio,
     Contact
   ],
-  templateUrl: './main-content.html'
+  templateUrl: './main-content.html',
+  styleUrl: './main-content.scss',
+  host: {
+    '[class.main-content-host]': 'true'
+  }
 })
 export class MainContentComponent {
 
