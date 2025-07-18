@@ -80,11 +80,11 @@
 .about-me-image::after {
   content: '';
   position: absolute;
-  right: -90px;
+  right: -5.7em;
   top: 50%;
-  transform: translateY(-50%);
-  width: 150px;
-  height: 4px;
+  transform: translateY(50%);
+  width: 9.4em;
+  height: 0.25em;
   background-color: #70E61C;
 }
 
