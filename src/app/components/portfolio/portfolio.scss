@@ -1,8 +1,18 @@
+.green-portfolio-shadow {
+  position: absolute;
+  left: 69%;
+  z-index: 3;
+  bottom: 10%;
+  pointer-events: none;
+}
+
 .portfolio-section {
   padding: 100px 0;
   display: flex;
   justify-content: center;
   background-color: transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-container {
@@ -11,7 +21,7 @@
   z-index: 2;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 100px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -49,6 +59,8 @@ h2 {
 }
 
 .project-image {
+  display: flex;
+  align-items: center;
   flex-basis: 50%;
   height: 339px;
   width: 620px;
