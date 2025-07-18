@@ -1,3 +1,12 @@
+.about-me-shadow {
+  position: absolute;
+  left: 69.9%;
+  top: 35%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .about-me-section {
   padding: 100px 0;
   position: relative;
@@ -18,9 +27,9 @@
 }
 
 .about-me-image {
-  flex-basis: 50%;
+  flex-basis: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
@@ -80,7 +89,7 @@
 .about-me-image::after {
   content: '';
   position: absolute;
-  right: -5.7em;
+  right: 1em;
   top: 50%;
   transform: translateY(50%);
   width: 9.4em;
