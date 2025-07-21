@@ -1,18 +1,43 @@
 <section id="contact" class="contact-section">
+  <img class="bg-shadow purple-shadow-contact" src="assets/img/shadows/purple-contact-shadow.png" alt="">
   <div class="contact-container">
-    <h2>{{ 'contact.title' | translate }}</h2>
-    <p class="contact-intro">{{ 'contact.intro' | translate }}</p>
-    <form action="https://formspree.io/f/DEINE_EINZIGARTIGE_FORM_ID" method="POST">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required>
+
+    <div class="contact-headline">
+      <div class="headline-line"></div>
+      <h2>{{ 'contact.title' | translate }}</h2>
+    </div>
+
+    <div class="contact-content">
+      <div class="contact-text">
+        <h3>Got a problem to solve?</h3>
+        <p>{{ 'contact.intro' | translate }}</p>
+        <p class="contact-cta">Need a Frontend developer? <strong>Contact me!</strong></p>
       </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <textarea name="message" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="btn-submit">{{ 'contact.button' | translate }}</button>
-    </form>
+
+      <form action="https://formspree.io/f/DEINE_EINZIGARTIGE_FORM_ID" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="privacy-policy">
+          <input type="checkbox" id="privacy" name="privacy" required>
+          <label for="privacy">
+            <span>I've read the </span>
+            <a href="#">privacy policy</a>
+            <span> and agree to the processing of my data as outlined.</span>
+          </label>
+        </div>
+        <button type="submit" class="btn-submit">{{ 'contact.button' | translate }}</button>
+      </form>
+    </div>
+
   </div>
+  <a href="#hero" class="arrow-up-link">
+    <img src="assets/img/icons/arrow-up.svg" alt="Arrow Up">
+  </a>
 </section>

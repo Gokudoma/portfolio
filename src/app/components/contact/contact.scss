@@ -1,34 +1,66 @@
 .contact-section {
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-container {
-  max-width: 800px;
-  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 100px;
   box-sizing: border-box;
-  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-headline {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.headline-line {
+  height: 4px;
+  width: 100px;
+  background-color: #9747FF;
 }
 
 h2 {
   font-size: 68px;
-  font-weight: 900;
-  color: #FFFFFF;
+  font-weight: 700;
 }
 
-.contact-intro {
-  font-size: 20px;
-  color: #E0E0E0;
-  max-width: 600px;
-  margin: -20px auto 50px auto;
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.contact-text {
+  flex-basis: 45%;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-cta {
+  margin-top: 20px;
 }
 
 form {
+  flex-basis: 55%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  text-align: left;
+  gap: 25px;
 }
 
 .form-group {
@@ -38,19 +70,55 @@ form {
 input,
 textarea {
   width: 100%;
-  padding: 20px;
-  border: 2px solid #9747FF;
+  padding: 18px;
+  border: 1px solid #9747FF;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   box-sizing: border-box;
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: transparent;
+  color: white;
 }
 
 textarea {
-  min-height: 200px;
+  min-height: 180px;
   resize: vertical;
+}
+
+.privacy-policy {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.privacy-policy input[type="checkbox"] {
+  display: none;
+}
+
+.privacy-policy label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.privacy-policy label::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid #70E61C;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.privacy-policy input[type="checkbox"]:checked + label::before {
+  background-color: #70E61C;
+}
+
+.privacy-policy a {
+  color: #70E61C;
 }
 
 .btn-submit {
@@ -63,10 +131,37 @@ textarea {
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  align-self: center;
+  transition: all 0.3s ease;
+  align-self: flex-start;
 }
 
 .btn-submit:hover {
-  background-color: #5dbd11;
+  background-color: #9747FF;
+  transform: scale(1.05);
+}
+
+.purple-shadow-contact {
+  position: absolute;
+  top: 35%;
+  left: 22%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.arrow-up-link {
+  position: absolute;
+  bottom: 5%;
+  right: 25.4%;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    padding: 0 40px;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+  .arrow-up-link {
+    right: 40px;
+  }
 }

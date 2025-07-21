@@ -34,7 +34,11 @@
   },
   "contact": {
     "title": "Kontakt",
+    "headline": "Gibt es ein Problem zu lösen?",
     "intro": "Haben Sie eine Frage oder möchten Sie zusammenarbeiten? Schreiben Sie mir eine Nachricht!",
+    "cta_1": "Benötigen Sie einen Frontend-Entwickler?",
+    "cta_2": "Kontaktieren Sie mich!",
+    "privacy": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
     "button": "Nachricht senden"
   },
   "footer": {
