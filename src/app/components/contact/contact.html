@@ -19,13 +19,13 @@
         </div>
         <div class="form-group">
           <input type="email" name="email" placeholder="Your Email" required ngModel #email="ngModel">
-           <span class="error-message" *ngIf="email.invalid && email.touched">
+          <span class="error-message" *ngIf="email.invalid && email.touched">
             {{ 'contact.validation.email' | translate }}
           </span>
         </div>
         <div class="form-group">
           <textarea name="message" placeholder="Your Message" required ngModel #message="ngModel"></textarea>
-           <span class="error-message" *ngIf="message.invalid && message.touched">
+          <span class="error-message" *ngIf="message.invalid && message.touched">
             {{ 'contact.validation.message' | translate }}
           </span>
         </div>
@@ -37,11 +37,9 @@
             <span> and agree to the processing of my data as outlined.</span>
           </label>
         </div>
-        <button type="submit" class="btn-submit" [disabled]="contactForm.invalid">{{ 'contact.button' | translate }}</button>
+        <button type="submit" class="btn-submit" [disabled]="contactForm.invalid">{{ 'contact.button' | translate
+          }}</button>
       </form>
     </div>
   </div>
-  <a href="#hero" class="arrow-up-link">
-    <img src="assets/img/icons/arrow-up.svg" alt="Arrow Up">
-  </a>
 </section>
