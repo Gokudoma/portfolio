@@ -13,6 +13,10 @@
   z-index: 2;
 }
 
+.form-group :hover {
+  cursor: pointer;
+}
+
 .contact-headline {
   display: flex;
   align-items: center;
