@@ -29,6 +29,9 @@
   "portfolio": {
     "title": "Portfolio",
     "intro": "Here is a selection of my projects. Feel free to check them out and test the applications.",
+    "join_description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "pokedex_description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    "el_pollo_loco_description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
     "button_live": "Live test",
     "button_github": "Github"
   },
