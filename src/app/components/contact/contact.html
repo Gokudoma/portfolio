@@ -1,28 +1,33 @@
 <section id="contact" class="contact-section">
-  <img class="bg-shadow purple-shadow-contact" src="assets/img/shadows/purple-contact-shadow.png" alt="">
   <div class="contact-container">
-
     <div class="contact-headline">
       <div class="headline-line"></div>
       <h2>{{ 'contact.title' | translate }}</h2>
     </div>
-
     <div class="contact-content">
       <div class="contact-text">
-        <h3>Got a problem to solve?</h3>
+        <h3>{{ 'contact.headline' | translate }}</h3>
         <p>{{ 'contact.intro' | translate }}</p>
-        <p class="contact-cta">Need a Frontend developer? <strong>Contact me!</strong></p>
+        <p class="contact-cta">{{ 'contact.cta_1' | translate }} <strong>{{ 'contact.cta_2' | translate }}</strong></p>
       </div>
-
-      <form action="https://formspree.io/f/DEINE_EINZIGARTIGE_FORM_ID" method="POST">
+      <form #contactForm="ngForm" action="https://formspree.io/f/DEINE_EINZIGARTIGE_FORM_ID" method="POST">
         <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="name" placeholder="Your Name" required ngModel #name="ngModel">
+          <span class="error-message" *ngIf="name.invalid && name.touched">
+            {{ 'contact.validation.name' | translate }}
+          </span>
         </div>
         <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="email" name="email" placeholder="Your Email" required ngModel #email="ngModel">
+           <span class="error-message" *ngIf="email.invalid && email.touched">
+            {{ 'contact.validation.email' | translate }}
+          </span>
         </div>
         <div class="form-group">
-          <textarea name="message" placeholder="Your Message" required></textarea>
+          <textarea name="message" placeholder="Your Message" required ngModel #message="ngModel"></textarea>
+           <span class="error-message" *ngIf="message.invalid && message.touched">
+            {{ 'contact.validation.message' | translate }}
+          </span>
         </div>
         <div class="privacy-policy">
           <input type="checkbox" id="privacy" name="privacy" required>
@@ -32,10 +37,9 @@
             <span> and agree to the processing of my data as outlined.</span>
           </label>
         </div>
-        <button type="submit" class="btn-submit">{{ 'contact.button' | translate }}</button>
+        <button type="submit" class="btn-submit" [disabled]="contactForm.invalid">{{ 'contact.button' | translate }}</button>
       </form>
     </div>
-
   </div>
   <a href="#hero" class="arrow-up-link">
     <img src="assets/img/icons/arrow-up.svg" alt="Arrow Up">

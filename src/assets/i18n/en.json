@@ -39,7 +39,12 @@
     "cta_1": "Need a Frontend developer?",
     "cta_2": "Contact me!",
     "privacy": "I've read the privacy policy and agree to the processing of my data as outlined.",
-    "button": "Send message"
+    "button": "Send message",
+    "validation": {
+      "name": "Your name is required.",
+      "email": "Your email is required.",
+      "message": "Your message is required."
+    }
   },
   "footer": {
     "legal_notice": "Legal Notice"

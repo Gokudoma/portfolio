@@ -39,7 +39,12 @@
     "cta_1": "Benötigen Sie einen Frontend-Entwickler?",
     "cta_2": "Kontaktieren Sie mich!",
     "privacy": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
-    "button": "Nachricht senden"
+    "button": "Nachricht senden",
+    "validation": {
+      "name": "Dein Name wird benötigt.",
+      "email": "Deine E-Mail wird benötigt.",
+      "message": "Deine Nachricht wird benötigt."
+    }
   },
   "footer": {
     "legal_notice": "Impressum"
