@@ -26,6 +26,16 @@
   gap: 50px 20px;
 }
 
+.my-skills-shadow {
+  position: absolute;
+  top: 394px;
+  left: -49px;
+  width: 428.59px;
+  height: 901.44px;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .skill-item {
   display: flex;
   flex-direction: column;
