@@ -9,6 +9,8 @@
   margin: 0 auto;
   padding: 0 100px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 
 .contact-headline {
@@ -85,8 +87,8 @@ textarea:hover {
   border-color: #70E61C;
 }
 
-input.ng-invalid.ng-touched,
-textarea.ng-invalid.ng-touched {
+input.error-border,
+textarea.error-border {
   border-color: red;
 }
 
@@ -152,7 +154,7 @@ textarea {
 }
 
 .btn-submit:disabled {
-  background-color: #555;
+  background-color: #555555;
   cursor: not-allowed;
   transform: none;
 }
@@ -162,14 +164,19 @@ textarea {
   transform: scale(1.05);
 }
 
+.purple-shadow-contact {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  z-index: 1;
+  pointer-events: none;
+}
+
 @media (max-width: 992px) {
   .contact-container {
     padding: 0 40px;
   }
   .contact-content {
     flex-direction: column;
-  }
-  .arrow-up-link {
-    right: 40px;
   }
 }
