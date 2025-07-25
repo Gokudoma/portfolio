@@ -54,6 +54,7 @@ h3 {
 .contact-text p {
   font-size: 18px;
   line-height: 1.6;
+  max-width: 471px;
 }
 
 .contact-cta {
@@ -123,6 +124,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 5px;
+  white-space: nowrap;
 }
 
 .privacy-policy label::before {
@@ -182,5 +184,8 @@ textarea {
   }
   .contact-content {
     flex-direction: column;
+  }
+  .privacy-policy label {
+    white-space: normal;
   }
 }

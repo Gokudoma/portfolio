@@ -1,6 +1,7 @@
 <section id="contact" class="contact-section">
+  <img class="bg-shadow purple-shadow-contact" src="assets/img/shadows/purple-contact-shadow.png" alt="">
   <div class="contact-container">
-    <img class="bg-shadow purple-shadow-contact" src="assets/img/shadows/purple-contact-shadow.png" alt="">
+
     <div class="contact-headline">
       <div class="headline-line"></div>
       <h2>{{ 'contact.title' | translate }}</h2>
@@ -35,9 +36,9 @@
         <div class="privacy-policy">
           <input type="checkbox" id="privacy" name="privacy" required>
           <label for="privacy">
-            <span>I've read the </span>
-            <a href="#">privacy policy</a>
-            <span> and agree to the processing of my data as outlined.</span>
+            <span>{{ 'contact.privacy_1' | translate }}</span>
+            <a routerLink="/privacy-policy">{{ 'contact.privacy_link' | translate }}</a>
+            <span>{{ 'contact.privacy_2' | translate }}</span>
           </label>
         </div>
         <button type="submit" class="btn-submit" [disabled]="contactForm.invalid">{{ 'contact.button' | translate }}</button>
@@ -45,4 +46,7 @@
     </div>
 
   </div>
+  <a href="#hero" class="arrow-up-link">
+    <img src="assets/img/icons/arrow-up.svg" alt="Arrow Up">
+  </a>
 </section>
