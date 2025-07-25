@@ -11,8 +11,8 @@
 
 .hero-background-image {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 60px;
+  left: 100%;
   transform: translateX(-50%);
   z-index: 3;
   pointer-events: none;
@@ -103,6 +103,7 @@
 }
 
 .image-content {
+  top: 50px;
   flex-shrink: 0;
   position: relative;
   width: 45%;
@@ -111,7 +112,7 @@
 }
 
 .image-content .profile-image {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 10%;
   width: 100%;
@@ -123,7 +124,7 @@
 
 .image-content .profile-elbow {
   position: absolute;
-  top: 60%;
+  top: 59.3%;
   left: 21.3%;
   width: 72.4%;
   height: 50%;
@@ -206,7 +207,7 @@
 
 @media (max-width: 1200px) {
   .hero-background-image {
-    top: 25%;
+    top: 0px;
   }
   .hero-wrapper {
     padding: 0 50px;
@@ -217,15 +218,12 @@
   .scroll-down-indicator {
     right: 50px;
   }
-  .image-content {
-    max-width: 450px;
-    height: auto;
-  }
+
 }
 
 @media (max-width: 992px) {
   .hero-background-image {
-    top: 15%;
+    top: -60px;
   }
   .hero-content {
     flex-direction: column;
@@ -235,11 +233,7 @@
   .text-content {
     align-items: center;
   }
-  .image-content {
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 450px;
-  }
+
   .image-content .profile-image {
     position: relative;
   }
@@ -264,9 +258,15 @@
   }
 }
 
+@media (max-width: 890px) {
+  .hero-background-image {
+    top: -110px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-background-image {
-    top: 17%;
+    top: -150px;
   }
   .hero-wrapper {
     padding: 0 40px;
@@ -282,21 +282,21 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 650px) {
   .hero-background-image {
-    top: 16%;
+    top: -190px;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   .hero-background-image {
-    top: 17%;
+    top: -230px;
   }
 }
 
 @media (max-width: 490px) {
   .hero-background-image {
-    top: 18%;
+    top: -240px;
   }
   .hero-wrapper {
     padding: 0 25px;
@@ -316,20 +316,26 @@
   }
 }
 
+@media (max-width: 460px) {
+  .hero-background-image {
+    top: -250px;
+  }
+}
+
+@media (max-width: 410px) {
+  .hero-background-image {
+    top: -260px;
+  }
+}
+
 @media (max-width: 390px) {
   .hero-background-image {
-    top: 12%;
+    top: -270px;
   }
 }
 
 @media (max-width: 360px) {
   .hero-background-image {
-    top: 5%;
-  }
-}
-
-@media (max-height: 880px) {
-  .hero-background-image {
-    top: 17%;
+    top: -280px;
   }
 }
