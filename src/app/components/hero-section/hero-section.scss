@@ -276,6 +276,27 @@
   .greeting {
     font-size: 38px;
   }
+  
+  .fixed-socials {
+    left: 40px;
+    gap: 20px;
+
+    .social-line {
+      width: 60px;
+    }
+
+    img {
+      height: 20px;
+    }
+
+    .email-text {
+      display: none;
+    }
+  }
+  
+  .scroll-down-indicator {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
