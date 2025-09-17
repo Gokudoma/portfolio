@@ -74,5 +74,16 @@
       "title": "4. Your Rights",
       "content": "You have the fundamental rights to access, rectification, erasure, restriction of processing, data portability, and object. If you believe that the processing of your data violates data protection law or your data protection claims have otherwise been violated, you can contact me at any time."
     }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "legal": {
+      "title": "Information according to § 5 TMG",
+      "content": "Stephan Wacker<br>Hohe Straße 14<br>57462 Olpe"
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "Phone: 0176 59210411<br>Email: stephanwacker318&#64;gmail.com"
+    }
   }
 }

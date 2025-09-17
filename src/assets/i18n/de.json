@@ -74,5 +74,16 @@
       "title": "4. Ihre Rechte",
       "content": "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich jederzeit an mich wenden."
     }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "legal": {
+      "title": "Angaben gemäß § 5 TMG",
+      "content": "Stephan Wacker<br>Hohe Straße 14<br>57462 Olpe"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Telefon: 0176 59210411<br>E-Mail: stephanwacker318&#64;gmail.com"
+    }
   }
 }
