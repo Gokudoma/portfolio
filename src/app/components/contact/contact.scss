@@ -177,6 +177,18 @@ textarea {
   pointer-events: none;
 }
 
+.submit-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.success-message {
+  color: #70E61C;
+  font-weight: 500;
+}
+
 @media (max-width: 992px) {
   .contact-container {
     padding: 0 40px;

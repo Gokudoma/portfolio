@@ -14,7 +14,7 @@
         <p class="contact-cta">{{ 'contact.cta_1' | translate }} <strong>{{ 'contact.cta_2' | translate }}</strong></p>
       </div>
 
-      <form #contactForm="ngForm" action="https://formspree.io/f/DEINE_EINZIGARTIGE_FORM_ID" method="POST">
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
         <div class="form-group">
           <input type="text" name="name" placeholder="Your Name" required ngModel #name="ngModel"
             [class.error-border]="name.invalid && name.touched">
@@ -45,8 +45,10 @@
             <span>{{ 'contact.privacy_2' | translate }}</span>
           </div>
         </div>
-        <button type="submit" class="btn-submit" [disabled]="contactForm.invalid">{{ 'contact.button' | translate
-          }}</button>
+        <div class="submit-container">
+          <button type="submit" class="btn-submit" [disabled]="contactForm.invalid">{{ 'contact.button' | translate }}</button>
+          <span *ngIf="isMessageSent" class="success-message">{{ 'contact.successMessage' | translate }}</span>
+        </div>
       </form>
     </div>
 

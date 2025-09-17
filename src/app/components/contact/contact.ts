@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -12,5 +12,16 @@ import { RouterLink } from '@angular/router';
   styleUrl: './contact.scss'
 })
 export class Contact {
+  isMessageSent = false;
 
+  onSubmit(form: NgForm) {
+    if (form.valid) {
+      this.isMessageSent = true;
+      form.resetForm();
+      
+      setTimeout(() => {
+        this.isMessageSent = false;
+      }, 4000);
+    }
+  }
 }

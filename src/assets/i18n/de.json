@@ -45,6 +45,7 @@
     "privacy_link": "Datenschutzerklärung",
     "privacy_2": " gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
     "button": "Nachricht senden",
+    "successMessage": "Ihre Nachricht wurde abgeschickt!",
     "validation": {
       "name": "Dein Name wird benötigt.",
       "email": "Deine E-Mail wird benötigt.",
