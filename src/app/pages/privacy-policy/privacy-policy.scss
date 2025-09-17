@@ -31,3 +31,31 @@ i {
     margin-top: 40px;
     color: #989898;
 }
+
+a {
+  color: #70E61C;
+  text-decoration: underline;
+
+  &:hover {
+    color: #9747FF; 
+  }
+}
+
+@media (max-width: 768px) {
+  .legal-container {
+    margin: 100px auto 30px auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

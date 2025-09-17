@@ -121,28 +121,27 @@ textarea {
 
 .privacy-policy label {
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  white-space: nowrap;
-}
-
-.privacy-policy label::before {
-  content: '';
   width: 20px;
   height: 20px;
   border: 2px solid #70E61C;
   border-radius: 4px;
   display: inline-block;
-  margin-right: 10px;
+  position: relative;
+  flex-shrink: 0;
 }
 
-.privacy-policy input[type="checkbox"]:checked + label::before {
+.privacy-policy input[type="checkbox"]:checked+label {
   background-color: #70E61C;
 }
 
-.privacy-policy a {
-  color: #70E61C;
+.privacy-policy-text {
+  line-height: 1.4;
+}
+
+.privacy-policy-text a {
+  color: #9747FF;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-submit {
@@ -184,8 +183,5 @@ textarea {
   }
   .contact-content {
     flex-direction: column;
-  }
-  .privacy-policy label {
-    white-space: normal;
   }
 }
