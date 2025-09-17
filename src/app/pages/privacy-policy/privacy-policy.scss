@@ -10,15 +10,38 @@ h1, h2 {
   font-weight: 700;
 }
 
+.headline-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
 h1 {
   font-size: 48px;
-  margin-bottom: 30px;
+  margin: 0;
+  white-space: nowrap;
+  color: #70E61C;
+}
+
+.headline-line {
+  height: 4px;
+  width: 100px;
+  background-color: #9747FF;
+  flex-shrink: 0;
+}
+
+.headline-line2 {
+  height: 4px;
+  background-color: #9747FF;
+  flex-grow: 1;
 }
 
 h2 {
   font-size: 32px;
   margin-top: 40px;
   margin-bottom: 15px;
+  color: #9747FF;
 }
 
 p {
