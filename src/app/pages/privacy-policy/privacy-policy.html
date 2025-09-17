@@ -1,35 +1,21 @@
 <div class="legal-container">
   <div class="headline-container">
     <div class="headline-line"></div>
-    <h1>Privacy Policy</h1>
+    <h1>{{ 'privacy.title' | translate }}</h1>
     <div class="headline-line2"></div>
   </div>
-  <p>Last updated: September 17, 2025</p>
+  <p>{{ 'privacy.lastUpdated' | translate }}</p>
 
-  <h2>1. Responsible for Data Processing</h2>
-  <p>
-    Stephan Wacker<br>
-    Hohe Straße 14<br>
-    57462 Olpe<br>
-    Email: stephanwacker318&#64;gmail.com
-  </p>
+  <h2>{{ 'privacy.responsible.title' | translate }}</h2>
+  <p [innerHTML]="'privacy.responsible.content' | translate"></p>
 
-  <h2>2. General Information</h2>
-  <p>
-    The protection of your personal data is of particular concern to me. I process your data exclusively on the basis of the statutory provisions (GDPR, TKG 2003). In this privacy policy, I inform you about the most important aspects of data processing within the scope of my website.
-  </p>
+  <h2>{{ 'privacy.general.title' | translate }}</h2>
+  <p>{{ 'privacy.general.content' | translate }}</p>
 
-  <h2>3. Contact Form</h2>
-  <p>
-    If you contact me via the form on the website, the data you provide (name, email address, message content) will be transmitted to and processed by the service provider Formspree to handle your request. I do not store this data myself beyond the processing by Formspree.
-  </p>
-  <p>
-    This data processing is based on your consent (Art. 6 (1) (a) GDPR). You can revoke this consent at any time by sending an informal email to the address mentioned above. The legality of the data processing operations carried out until the revocation remains unaffected. For more information on how Formspree handles user data, please see <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspree's privacy policy</a>.
-  </p>
+  <h2>{{ 'privacy.contactForm.title' | translate }}</h2>
+  <p>{{ 'privacy.contactForm.content1' | translate }}</p>
+  <p [innerHTML]="'privacy.contactForm.content2' | translate"></p>
   
-  <h2>4. Your Rights</h2>
-    <p>
-        You have the fundamental rights to access, rectification, erasure, restriction of processing, data portability, and object. If you believe that the processing of your data violates data protection law or your data protection claims have otherwise been violated, you can contact me at any time.
-    </p>
-
+  <h2>{{ 'privacy.rights.title' | translate }}</h2>
+  <p>{{ 'privacy.rights.content' | translate }}</p>
 </div>

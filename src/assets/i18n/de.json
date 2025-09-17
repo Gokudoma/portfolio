@@ -42,7 +42,7 @@
     "cta_1": "Benötigen Sie einen Frontend-Entwickler?",
     "cta_2": "Kontaktieren Sie mich!",
     "privacy_1": "Ich habe die ",
-    "privacy_link": "Datenschutzrichtlinie",
+    "privacy_link": "Datenschutzerklärung",
     "privacy_2": " gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
     "button": "Nachricht senden",
     "validation": {
@@ -53,5 +53,26 @@
   },
   "footer": {
     "legal_notice": "Impressum"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Letzte Aktualisierung: 17. September 2025",
+    "responsible": {
+      "title": "1. Verantwortlicher für die Datenverarbeitung",
+      "content": "Stephan Wacker<br>Hohe Straße 14<br>57462 Olpe<br>E-Mail: stephanwacker318&#64;gmail.com"
+    },
+    "general": {
+      "title": "2. Allgemeine Informationen",
+      "content": "Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen. Ich verarbeite Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003). In diesen Datenschutzinformationen informiere ich Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen meiner Website."
+    },
+    "contactForm": {
+      "title": "3. Kontaktformular",
+      "content1": "Wenn Sie mich über das Formular auf der Website kontaktieren, werden Ihre angegebenen Daten (Name, E-Mail-Adresse, Nachrichteninhalt) zur Bearbeitung Ihrer Anfrage an den Dienstanbieter Formspree übermittelt und dort verarbeitet. Ich selbst speichere diese Daten nicht über die Verarbeitung durch Formspree hinaus.",
+      "content2": "Die Verarbeitung dieser Daten erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen, indem Sie eine formlose E-Mail an die oben genannte Adresse senden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt. Weitere Informationen zum Umgang mit Nutzerdaten bei Formspree finden Sie in der <a href='https://formspree.io/legal/privacy-policy/' target='_blank' rel='noopener noreferrer'>Datenschutzerklärung von Formspree</a>."
+    },
+    "rights": {
+      "title": "4. Ihre Rechte",
+      "content": "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich jederzeit an mich wenden."
+    }
   }
 }
