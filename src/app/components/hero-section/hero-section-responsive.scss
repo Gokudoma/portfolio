@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+  .hero-background-image {
+    top: 0px;
+  }
+  .hero-wrapper {
+    padding: 0 50px;
+  }
+  .fixed-socials {
+    left: 50px;
+  }
+  .scroll-down-indicator {
+    right: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-background-image {
+    top: -60px;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-content {
+    align-items: center;
+  }
+
+  .image-content .profile-image {
+    position: relative;
+  }
+  .headline {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .greeting {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 48px;
+  }
+  .name {
+    font-size: 68px;
+  }
+  .title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 890px) {
+  .hero-background-image {
+    top: -110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-background-image {
+    top: -150px;
+  }
+  .hero-wrapper {
+    padding: 0 40px;
+  }
+  .name {
+    font-size: 48px;
+  }
+  .title {
+    font-size: 34px;
+  }
+  .greeting {
+    font-size: 38px;
+  }
+
+  .fixed-socials {
+    left: 40px;
+    gap: 20px;
+
+    .social-line {
+      width: 60px;
+    }
+
+    img {
+      height: 20px;
+    }
+
+    .email-text {
+      display: none;
+    }
+  }
+
+  .scroll-down-indicator {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-background-image {
+    top: -190px;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-background-image {
+    top: -230px;
+  }
+}
+
+@media (max-width: 490px) {
+  .hero-background-image {
+    top: -240px;
+  }
+  .hero-wrapper {
+    padding: 0 25px;
+  }
+  .name {
+    font-size: 38px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .greeting {
+    font-size: 32px;
+  }
+  .btn-hero-contact {
+    padding: 12px 25px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 460px) {
+  .hero-background-image {
+    top: -250px;
+  }
+}
+
+@media (max-width: 410px) {
+  .hero-background-image {
+    top: -260px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-background-image {
+    top: -270px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-background-image {
+    top: -280px;
+  }
+}
