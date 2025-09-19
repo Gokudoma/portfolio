@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
+/**
+ * Represents the hero section of the homepage.
+ * This component typically serves as the main introduction or banner on the site.
+ */
 @Component({
   selector: 'app-hero-section',
   standalone: true,

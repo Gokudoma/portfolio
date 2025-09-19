@@ -5,6 +5,10 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
+/**
+ * Represents the contact form component.
+ * This component allows users to send a message through a form.
+ */
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -13,10 +17,24 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contact.scss'
 })
 export class Contact {
+  /**
+   * A flag to indicate whether the message has been sent successfully.
+   * Used to show a confirmation message to the user.
+   */
   isMessageSent = false;
 
+  /**
+   * Creates an instance of the Contact component.
+   * @param {HttpClient} http The Angular HttpClient for making HTTP requests.
+   */
   constructor(private http: HttpClient) {}
 
+  /**
+   * Handles the contact form submission.
+   * It validates the form and, if valid, sends the data to a backend service.
+   * On successful submission, it shows a confirmation message and resets the form.
+   * @param {NgForm} form The form instance containing the user's input.
+   */
   onSubmit(form: NgForm) {
     if (form.valid && form.submitted) {
       const formData = new FormData();
@@ -32,9 +50,6 @@ export class Contact {
             setTimeout(() => {
               this.isMessageSent = false;
             }, 4000);
-          },
-          error: (error) => {
-            console.error('Fehler beim Senden der Nachricht:', error);
           }
         });
     }

@@ -5,6 +5,11 @@ import { MySkills } from '../../components/my-skills/my-skills';
 import { Portfolio } from '../../components/portfolio/portfolio';
 import { Contact } from '../../components/contact/contact';
 
+/**
+ * Represents the main content container of the application.
+ * This component aggregates several other components to form the primary layout of the page,
+ * including the hero section, about me, skills, portfolio, and contact sections.
+ */
 @Component({
   selector: 'app-main-content',
   standalone: true,
