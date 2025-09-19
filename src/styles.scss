@@ -44,3 +44,13 @@ h2 {
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 430px) {
+  h2 {
+    font-size: 55px !important;
+  }
+
+  .headline-line {
+    display: none;
+  }
+}
