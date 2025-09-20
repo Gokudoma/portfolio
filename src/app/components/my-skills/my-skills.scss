@@ -1,7 +1,5 @@
 .skills-section {
-  padding: 100px 0;
   position: relative;
-  overflow: visible;
   background-color: transparent;
 }
 
@@ -16,10 +14,9 @@
 }
 
 .skills-container {
-  background-color: #141D2F;
+  background-color: #141d2f;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 100px;
   display: grid;
   gap: 30px 100px;
   grid-template-columns: 55fr 45fr;
@@ -42,7 +39,6 @@
 }
 
 .skills-intro-paragraph {
-  grid-area: intro-para; /* DIESE ZEILE HAT GEFEHLT */
   font-size: 18px;
   line-height: 1.6;
   max-width: 471px;
@@ -87,7 +83,7 @@
     transform: scale(1.1);
   }
   span {
-    color: #70E61C;
+    color: #70e61c;
   }
 }
 
@@ -95,13 +91,12 @@
   font-size: 68px;
   font-weight: 700;
   margin: 0;
-  white-space: nowrap;
 }
 
 .headline-line {
   height: 4px;
   width: 68px;
-  background-color: #9747FF;
+  background-color: #9747ff;
 }
 
 .skills-text-content p {
@@ -118,18 +113,18 @@
 }
 
 .skills-text-content .bold-text span {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .skills-text-content .bold-text .highlight {
-  color: #9747FF;
+  color: #9747ff;
 }
 
 .btn-get-in-touch {
   display: inline-block;
   margin-top: 30px;
   padding: 15px 30px;
-  background-color: #70E61C;
+  background-color: #70e61c;
   color: white;
   font-weight: 700;
   font-size: 20px;
@@ -140,7 +135,7 @@
 
 .btn-get-in-touch:hover {
   transform: scale(1.05);
-  background-color: #9747FF;
+  background-color: #9747ff;
 }
 
 @media (max-width: 1200px) {
@@ -186,5 +181,17 @@
   }
   .skills-icon-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 396px) {
+    .skills-icon-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .my-skills-shadow {
+    width: 340px;
+    height: auto;
+    left: -40px;
+    top: 420px;
+  }
   }
 }
